@@ -1,14 +1,15 @@
 class BandPassFilter
 
   def filter(sound_wave, min_freq, max_freq)
-    new_sound_wave = []
 
-    if sound_wave[0] < min_freq
-      new_sound_wave << min_freq
-    elsif sound_wave[0] > max_freq
-      new_sound_wave << max_freq
+  new_sound_wave = sound_wave.map do |freq|
+    if freq < min_freq
+      min_freq
+    elsif freq > max_freq
+      max_freq
     else
-      sound_wave
+      freq
     end
+  end
   end
 end
