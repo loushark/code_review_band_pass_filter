@@ -34,7 +34,18 @@ describe BandPassFilter do
         input = [30]
         expect(test_filter.filter(input, 10, 20)).to eq [20]
       end
+
+      it 'returns a changed sound wave when it does not meet the max frequency requirements' do
+        input = [10, 20, 30]
+        expect(test_filter.filter(input, 10, 20)).to eq [10, 20, 20]
+      end
     end
 
+    context 'changes sound wave when doesnt meet max freq requirement' do
+      it 'returns a changed sound wave when it does not meet the max or min frequency requirements' do
+        input = [10, 20, 30]
+        expect(test_filter.filter(input, 20, 25)).to eq [20, 20, 25]
+      end
+    end
   end
 end
