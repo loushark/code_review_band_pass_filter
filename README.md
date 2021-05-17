@@ -23,7 +23,8 @@ Filtered in under 100 ms
 * [10, 20, 30], 10, 20    | [10, 20, 20]
 * [10, 20, 30], 20, 25    | [20, 20, 25]
 
-[]                      | raise error
-
+* []                      | raise error
+<!-- defaults:  -->
+* [1010, 20, 30]            | [1000, 40, 40]
 min default: 40
 max defualt: 1000

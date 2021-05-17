@@ -51,5 +51,10 @@ describe BandPassFilter do
       input = []
       expect { test_filter.filter(input, 20, 30) }.to raise_error("There is no sound wave given")
     end
+
+    it 'returns a soundwave with default frequencies' do
+      input = [1010, 20, 30]
+      expect(test_filter.filter(input)).to eq [1000, 40, 40]
+    end
   end
 end
