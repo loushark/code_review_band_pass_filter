@@ -23,3 +23,6 @@ input                   |    output
 [10, 20, 30], 10, 20    | [10, 20, 20]
 
 []                      | raise error
+
+min default: 40
+max defualt: 1000
