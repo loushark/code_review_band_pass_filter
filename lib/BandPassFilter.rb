@@ -5,6 +5,8 @@ class BandPassFilter
 
     if sound_wave[0] < min_freq
       new_sound_wave << min_freq
+    elsif sound_wave[0] > max_freq
+      new_sound_wave << max_freq
     else
       sound_wave
     end
