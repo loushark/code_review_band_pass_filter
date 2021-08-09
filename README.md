@@ -9,8 +9,6 @@ inputs given: sound wave, min freq, max freq
 sound_wave: [array of frequencies]
 freq is an integer
 
-44,100 frequencies = 1 full second of music
-Filtered in under 100 ms
 
 
   input                   |    output   
@@ -28,3 +26,31 @@ Filtered in under 100 ms
 * [1010, 20, 30]            | [1000, 40, 40]
 min default: 40
 max defualt: 1000
+
+------
+
+more requirements:
+
+  44,100 frequencies = 1 full second of music
+  Filtered in under 100 ms
+
+-----
+
+
+research:
+- testing against time
+
+
+
+
+feedback:
+- bias in tests... vary test cases
+  -> change freq values in arrays
+- introduce single tests per red phase
+- commit every refactoring, not just in refactoring phase
+  -> commit messages more descriptive
+  -> don't talk about tests, only implementation
+  -> unless grouping tests under context
+- refactoring the if to ternary, too complicated not easy to change
+- learn other matchers, time, exceptions
+- debugging, use irb, test assumptions
