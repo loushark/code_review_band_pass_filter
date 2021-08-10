@@ -2,15 +2,15 @@
 ### Audio plugin company
 
 musicians use filters to change how their tracks sound
-
+  
 build a band pass filter
-
-inputs given: sound wave, min freq, max freq
-sound_wave: [array of frequencies]
-freq is an integer
-
-min default: 40
-max defualt: 1000
+  
+inputs given: sound wave, min freq, max freq  
+sound_wave: [array of frequencies]  
+freq is an integer  
+  
+min default: 40  
+max defualt: 1000  
 
 
   | tested | input                   |    output   |
