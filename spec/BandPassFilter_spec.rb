@@ -1,7 +1,7 @@
 require 'BandPassFilter'
 
-describe BandPassFilter do
-  let(:test_filter) { BandPassFilter.new }
+describe BandPass do
+  let(:test_filter) { BandPass.new }
 
   describe '#filter' do
     context 'does not change the sound wave input' do

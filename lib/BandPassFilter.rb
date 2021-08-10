@@ -1,4 +1,4 @@
-class BandPassFilter
+class BandPass
 
   def filter(sound_wave, min_freq=40, max_freq=1000)
     check_sound_wave(sound_wave)
@@ -17,7 +17,7 @@ private
         min_freq
       elsif freq > max_freq
         max_freq
-      else 
+      else
         freq
       end
     end
